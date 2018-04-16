@@ -1,0 +1,18 @@
+name: 'Paragraph Slideshow'
+description: 'Provides Slideshow paragraphs type and related configuration.'
+type: module
+core: 8.x
+dependencies:
+  - elemental
+  - elemental_paragraph_image
+  - elemental_paragraph_video
+  - entity_browser_entity_form
+  - field
+  - image
+  - inline_entity_form
+  - media_entity
+  - paragraphs
+  - user
+  - views
+  - views_slideshow
+package: Elemental

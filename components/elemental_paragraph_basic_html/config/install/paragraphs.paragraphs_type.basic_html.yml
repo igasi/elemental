@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: basic_html
+label: 'Basic HTML'
+icon_uuid: null
+behavior_plugins: {  }

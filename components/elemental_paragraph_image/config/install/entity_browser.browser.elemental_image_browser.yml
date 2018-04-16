@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.elemental_media_image
+  module:
+    - entity_browser_entity_form
+    - views
+name: elemental_image_browser
+label: 'Image Browser'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select images'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  5cf0249b-2c13-4cb3-a412-4ffafac15e4b:
+    settings:
+      view: elemental_media_image
+      view_display: entity_browser_media_image
+      submit_text: Place
+      auto_select: false
+    uuid: 5cf0249b-2c13-4cb3-a412-4ffafac15e4b
+    weight: 1
+    label: 'Search Images Exists'
+    id: view
+  055b789e-afab-4e9b-8081-62ae63229eba:
+    settings:
+      entity_type: media
+      bundle: image
+      form_mode: default
+      submit_text: 'Save Image'
+    uuid: 055b789e-afab-4e9b-8081-62ae63229eba
+    weight: 3
+    label: 'Upload New Image'
+    id: entity_form

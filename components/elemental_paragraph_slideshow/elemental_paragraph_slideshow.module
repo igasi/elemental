@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Functions to support elemental paragraph slideshow.
+ */
+
+use Drupal\block\Entity\Block;
+
+/**
+  * Implements hook_preprocess_paragraph().
+  */
+function elemental_paragraph_slideshow_preprocess_paragraph(&$vars) {
+  // Prepare the render slideshow.
+  if ($vars['paragraph']->getType() == 'slideshow') {
+    $block = views_embed_view("elemental_slideshow");
+    if ($block != NULL) {
+      $vars['content']['field_slideshow_slides'] = $block;
+    }
+  }
+}

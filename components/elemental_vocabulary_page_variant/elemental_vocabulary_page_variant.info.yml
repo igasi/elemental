@@ -1,0 +1,8 @@
+name: 'Vocabulary Page Variant'
+description: 'Provides Elemental Page Variant taxonomy vocabulary and related configuration. Variations of Elemental Page'
+type: module
+core: 8.x
+dependencies:
+  - elemental
+  - taxonomy
+package: Elemental

@@ -1,0 +1,11 @@
+name: Elemental
+description: 'Elemental contains pre-built components based on paragraphs.'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - paragraphs
+  - help
+  - system
+  - user
+package: Elemental

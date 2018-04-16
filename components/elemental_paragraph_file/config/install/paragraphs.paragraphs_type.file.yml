@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: file
+label: File
+icon_uuid: null
+behavior_plugins: {  }

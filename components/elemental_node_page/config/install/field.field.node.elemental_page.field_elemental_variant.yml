@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_elemental_variant
+    - node.type.elemental_page
+    - taxonomy.vocabulary.elemental_page_variant
+id: node.elemental_page.field_elemental_variant
+field_name: field_elemental_variant
+entity_type: node
+bundle: elemental_page
+label: Variant
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      elemental_page_variant: elemental_page_variant
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

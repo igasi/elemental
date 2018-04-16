@@ -1,0 +1,10 @@
+name: 'Paragraph Quote'
+description: 'Provides Quote paragraphs type and related configuration.'
+type: module
+core: 8.x
+dependencies:
+  - elemental
+  - field
+  - paragraphs
+  - text
+package: Elemental

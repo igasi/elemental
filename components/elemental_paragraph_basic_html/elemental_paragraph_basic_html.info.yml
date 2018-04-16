@@ -1,0 +1,13 @@
+name: 'Paragraph Basic HTML'
+description: 'Provides Basic HTML paragraphs type and related configuration.'
+type: module
+core: 8.x
+dependencies:
+  - elemental
+  - ckeditor
+  - editor
+  - field
+  - filter
+  - paragraphs
+  - text
+package: Elemental

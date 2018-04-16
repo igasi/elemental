@@ -1,0 +1,5 @@
+bundle: elemental
+excluded:
+  - field.field.node.article.field_image
+  - field.storage.node.field_image
+required: true

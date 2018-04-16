@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Elemental Page Variant'
+vid: elemental_page_variant
+description: 'Variations of Elemental Page'
+hierarchy: 0
+weight: 0

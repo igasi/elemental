@@ -1,0 +1,10 @@
+name: 'Paragraph File'
+description: 'Provides File paragraphs type and related configuration.'
+type: module
+core: 8.x
+dependencies:
+  - elemental
+  - field
+  - file
+  - paragraphs
+package: Elemental

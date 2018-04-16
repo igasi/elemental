@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.elemental_media_video
+  module:
+    - entity_browser_entity_form
+    - views
+name: elemental_video_browser
+label: 'Video Browser'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select videos'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  f7a06a74-a56e-4128-a578-ad8b2f8f0b68:
+    settings:
+      view: elemental_media_video
+      view_display: entity_browser_media_video
+      submit_text: Place
+      auto_select: false
+    uuid: f7a06a74-a56e-4128-a578-ad8b2f8f0b68
+    weight: 1
+    label: 'Search Images Exists'
+    id: view
+  294d8156-03fd-4952-b8fb-fc0211c3eecd:
+    settings:
+      entity_type: media
+      bundle: video
+      form_mode: default
+      submit_text: 'Save video'
+    uuid: 294d8156-03fd-4952-b8fb-fc0211c3eecd
+    weight: 2
+    label: 'Create New Video'
+    id: entity_form

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_svg_code
+    - paragraphs.paragraphs_type.svg
+id: paragraph.svg.field_svg_code
+field_name: field_svg_code
+entity_type: paragraph
+bundle: svg
+label: 'SVG Code'
+description: 'Enter a valid code for svg with tag <svg></svg>'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

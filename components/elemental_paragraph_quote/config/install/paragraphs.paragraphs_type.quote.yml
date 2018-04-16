@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: quote
+label: Quote
+icon_uuid: null
+behavior_plugins: {  }

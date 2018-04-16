@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.elemental_page.field_elemental_body_slices
+    - field.field.node.elemental_page.field_elemental_content_related
+    - field.field.node.elemental_page.field_elemental_header_element
+    - field.field.node.elemental_page.field_elemental_section
+    - field.field.node.elemental_page.field_elemental_summary
+    - field.field.node.elemental_page.field_elemental_tags
+    - field.field.node.elemental_page.field_elemental_variant
+    - node.type.elemental_page
+  module:
+    - text
+    - user
+id: node.elemental_page.teaser
+targetEntityType: node
+bundle: elemental_page
+mode: teaser
+content:
+  field_elemental_section:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_elemental_summary:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_elemental_body_slices: true
+  field_elemental_content_related: true
+  field_elemental_header_element: true
+  field_elemental_tags: true
+  field_elemental_variant: true

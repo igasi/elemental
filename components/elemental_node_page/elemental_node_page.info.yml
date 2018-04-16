@@ -1,0 +1,31 @@
+name: 'Node Elemental Page'
+description: 'Provides Elemental Page content type and related configuration. Use <em>elemental pages</em> for content that needs be dynamic using slices (paragraphs), and multiple variants.'
+type: module
+core: 8.x
+dependencies:
+  - elemental
+  - elemental_paragraph_basic_html
+  - elemental_paragraph_file
+  - elemental_paragraph_image
+  - elemental_paragraph_quote
+  - elemental_paragraph_slideshow
+  - elemental_paragraph_svg
+  - elemental_paragraph_video
+  - elemental_vocabulary_page_variant
+  - elemental_vocabulary_sections
+  - elemental_vocabulary_tags
+  - entity_browser_entity_form
+  - entity_reference_revisions
+  - field
+  - field_group
+  - inline_entity_form
+  - media_entity
+  - menu_ui
+  - node
+  - paragraphs
+  - path
+  - rdf
+  - taxonomy
+  - text
+  - user
+package: Elemental

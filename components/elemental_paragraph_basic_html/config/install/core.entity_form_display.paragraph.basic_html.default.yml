@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.basic_html.field_basic_html_body
+    - field.field.paragraph.basic_html.field_basic_html_headline
+    - paragraphs.paragraphs_type.basic_html
+  module:
+    - text
+id: paragraph.basic_html.default
+targetEntityType: paragraph
+bundle: basic_html
+mode: default
+content:
+  field_basic_html_body:
+    weight: 2
+    settings:
+      rows: 12
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_basic_html_headline:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

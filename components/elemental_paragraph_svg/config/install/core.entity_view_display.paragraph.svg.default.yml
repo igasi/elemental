@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.svg.field_svg_code
+    - field.field.paragraph.svg.field_svg_script
+    - paragraphs.paragraphs_type.svg
+  module:
+    - file
+id: paragraph.svg.default
+targetEntityType: paragraph
+bundle: svg
+mode: default
+content:
+  field_svg_code:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_svg_script:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_url_plain
+    region: content
+hidden: {  }

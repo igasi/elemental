@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_file_file
+    - paragraphs.paragraphs_type.file
+  module:
+    - file
+id: paragraph.file.field_file_file
+field_name: field_file_file
+entity_type: paragraph
+bundle: file
+label: File
+description: 'txt, pdf, ttf, ttc, pfb, pfm, otf, otf, dfont, pfa, afm'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: uploaded_files
+  file_extensions: 'txt pdf ttf ttc pfb pfm otf dfont pfa afm'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

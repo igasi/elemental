@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_elemental_header_element
+    - media_entity.bundle.image
+    - media_entity.bundle.video
+    - node.type.elemental_page
+id: node.elemental_page.field_elemental_header_element
+field_name: field_elemental_header_element
+entity_type: node
+bundle: elemental_page
+label: 'Header Element'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      video: video
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

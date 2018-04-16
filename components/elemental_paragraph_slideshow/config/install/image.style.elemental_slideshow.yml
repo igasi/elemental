@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: elemental_slideshow
+label: Slideshow
+effects:
+  1ee7b1d7-2b59-4a78-aed3-6a234500039c:
+    uuid: 1ee7b1d7-2b59-4a78-aed3-6a234500039c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 500
